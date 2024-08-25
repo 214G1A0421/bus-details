@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bus</title>
+    </head>
+    <body>
+        <table border="'1">
+            <tr>
+                <th>bid</th>
+                <th>Routes</th>
+                <th>stime</th>
+                <th>rtime</th>
+            </tr>
+            {% for i in bus %}
+            <tr>
+            <td>{{ i.bid }}</td>
+            <td>{{ i.Route }}</td>
+            <td>{{ i.stime }}</td> 
+            <td>{{ i.rtime }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <h1>length of the bus table is : {{ bus|length }}</h1>
+    </body>
+</html>
